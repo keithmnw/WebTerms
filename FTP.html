@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Terms - FTP</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-color: #1a1a2e; color: #333; padding-top: 60px;">
+    <nav style="position: fixed; top: 0; left: 0; right: 0; height: 50px; background: linear-gradient(90deg, #1a365d, #2c5282); border-bottom: 3px solid #4299e1; display: flex; align-items: center; justify-content: center; gap: 15px; z-index: 1000; box-shadow: 0 4px 15px rgba(0,0,0,0.1); overflow-x: auto; padding: 0 10px;">
+        <a href="index.html" style="color: #ebf8ff; text-decoration: none; font-weight: bold; font-size: 0.95em; white-space: nowrap;">🏠 Home</a>
+        <a href="glossary.html" style="color: #a0c4e8; text-decoration: none; font-size: 0.95em; white-space: nowrap;">📖 Glossary</a>
+        <a href="www.html" style="color: #a0c4e8; text-decoration: none; font-size: 0.95em; white-space: nowrap;">🌐 WWW</a>
+        <a href="TCPIP.html" style="color: #a0c4e8; text-decoration: none; font-size: 0.95em; white-space: nowrap;">🔗 TCP/IP</a>
+        <a href="DNS.html" style="color: #a0c4e8; text-decoration: none; font-size: 0.95em; white-space: nowrap;">📡 DNS</a>
+        <a href="WebBrowsers.html" style="color: #a0c4e8; text-decoration: none; font-size: 0.95em; white-space: nowrap;">🌍 Browsers</a>
+        <a href="WebServers.html" style="color: #a0c4e8; text-decoration: none; font-size: 0.95em; white-space: nowrap;">🖥️ Servers</a>
+        <a href="URL.html" style="color: #a0c4e8; text-decoration: none; font-size: 0.95em; white-space: nowrap;">🔗 URL</a>
+        <a href="Intranet.html" style="color: #a0c4e8; text-decoration: none; font-size: 0.95em; white-space: nowrap;">🏢 Intranet</a>
+        <a href="Extranet.html" style="color: #a0c4e8; text-decoration: none; font-size: 0.95em; white-space: nowrap;">🌍 Extranet</a>
+        <a href="Multitier.html" style="color: #a0c4e8; text-decoration: none; font-size: 0.95em; white-space: nowrap;">🏗️ Multitier</a>
+        <a href="FTP.html" style="color: #ffffff; text-decoration: none; font-weight: bold; font-size: 0.95em; white-space: nowrap;">📁 FTP</a>
+        <a href="HTML.html" style="color: #a0c4e8; text-decoration: none; font-size: 0.95em; white-space: nowrap;">🏷️ HTML</a>
+    </nav>
+    <div style="background-color: #ffffff; max-width: 800px; margin: 20px auto; padding: 30px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.08);">
+    <h1 style="color: #1a365d; border-bottom: 3px solid #2c5282; padding-bottom: 15px;">File Transfer Protocol (FTP)</h1>
+    <p><strong>FTP</strong> (File Transfer Protocol) is a standard network protocol used for transferring files between a client and a server on a computer network. It was originally designed in the 1970s and has remained a fundamental method for file sharing across the internet.</p>
+    <p>FTP operates on a client-server model using TCP ports 20 (data) and 21 (commands). Users can connect to an FTP server using credentials or anonymously to upload, download, delete, and manage files on remote servers.</p>
+    <hr style="border: none; border-top: 1px solid #e2e8f0; margin: 25px 0;">
+    <div style="text-align: center; margin: 20px 0;">
+        <img src="images.html/ftp_communication_diagram.jpg"
+            alt="Diagram showing FTP communication: FTP client on left connecting to FTP server on right, showing command channel (port 21) and data channel (port 20)"
+            style="max-width: 100%; height: auto; border-radius: 4px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+        <p style="color: #718096; font-size: 0.9em; margin-top: 10px;">FTP Communication Model</p>
+    </div>
+    <hr style="border: none; border-top: 1px solid #e2e8f0; margin: 25px 0;">
+    <p style="color: #2c5282; font-size: 1.2em; font-weight: 600;">FTP Commands:</p>
+    <ul style="background-color: #f7fafc; padding: 20px 20px 20px 40px; border-radius: 6px; border-left: 4px solid #4299e1;">
+        <li style="margin-bottom: 10px;"><strong>USER:</strong> Specify username for authentication</li>
+        <li style="margin-bottom: 10px;"><strong>PASS:</strong> Provide password</li>
+        <li style="margin-bottom: 10px;"><strong>LIST:</strong> List files in current directory</li>
+        <li style="margin-bottom: 10px;"><strong>RETR:</strong> Download a file from server</li>
+        <li style="margin-bottom: 10px;"><strong>STOR:</strong> Upload a file to server</li>
+        <li style="margin-bottom: 10px;"><strong>DELE:</strong> Delete a file on server</li>
+        <li><strong>QUIT:</strong> Disconnect from FTP server</li>
+    </ul>
+    <hr style="border: none; border-top: 1px solid #e2e8f0; margin: 25px 0;">
+    <p style="color: #2c5282; font-size: 1.2em; font-weight: 600;">FTP Modes:</p>
+    <ul style="background-color: #f7fafc; padding: 20px 20px 20px 40px; border-radius: 6px; border-left: 4px solid #4299e1;">
+        <li style="margin-bottom: 10px;"><strong>Active Mode:</strong> Server initiates data connection back to client. Client sends PORT command with random port.</li>
+        <li style="margin-bottom: 10px;"><strong>Passive Mode:</strong> Client initiates both connections. Server sends PASV command with port for data connection.</li>
+        <li><strong>Secure FTP (SFTP):</strong> Extension using SSH for encrypted file transfers (different protocol).</li>
+    </ul>
+    <hr style="border: none; border-top: 1px solid #e2e8f0; margin: 25px 0;">
+    <a href="glossary.html" style="color: #2b6cb0; text-decoration: none; font-weight: 500; padding: 10px 20px; background-color: #ebf8ff; border-radius: 4px; display: inline-block;">← Back to Glossary</a>
+</div>
+</html>
