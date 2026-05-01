@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Terms</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-color: #1a1a2e; color: #333; padding-top: 60px;">
+    <nav style="position: fixed; top: 0; left: 0; right: 0; height: 50px; background: linear-gradient(90deg, #1a365d, #2c5282); border-bottom: 3px solid #4299e1; display: flex; align-items: center; justify-content: center; gap: 15px; z-index: 1000; box-shadow: 0 4px 15px rgba(0,0,0,0.1); overflow-x: auto; padding: 0 10px;">
+        <a href="index.html" style="color: #ebf8ff; text-decoration: none; font-weight: bold; font-size: 0.95em; white-space: nowrap;">🏠 Home</a>
+        <a href="glossary.html" style="color: #a0c4e8; text-decoration: none; font-size: 0.95em; white-space: nowrap;">📖 Glossary</a>
+        <a href="www.html" style="color: #a0c4e8; text-decoration: none; font-size: 0.95em; white-space: nowrap;">🌐 WWW</a>
+        <a href="TCPIP.html" style="color: #a0c4e8; text-decoration: none; font-size: 0.95em; white-space: nowrap;">🔗 TCP/IP</a>
+        <a href="DNS.html" style="color: #a0c4e8; text-decoration: none; font-size: 0.95em; white-space: nowrap;">📡 DNS</a>
+        <a href="WebBrowsers.html" style="color: #a0c4e8; text-decoration: none; font-size: 0.95em; white-space: nowrap;">🌍 Browsers</a>
+        <a href="WebServers.html" style="color: #a0c4e8; text-decoration: none; font-size: 0.95em; white-space: nowrap;">🖥️ Servers</a>
+        <a href="URL.html" style="color: #a0c4e8; text-decoration: none; font-size: 0.95em; white-space: nowrap;">🔗 URL</a>
+        <a href="Intranet.html" style="color: #a0c4e8; text-decoration: none; font-size: 0.95em; white-space: nowrap;">🏢 Intranet</a>
+        <a href="Extranet.html" style="color: #a0c4e8; text-decoration: none; font-size: 0.95em; white-space: nowrap;">🌍 Extranet</a>
+    </nav>
+    <div style="background-color: #ffffff; max-width: 800px; margin : 20px auto; padding: 30px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.08);">
+    <h1 style="color: #1a365d; border-bottom: 3px solid #2c5282; padding-bottom: 15px;">Multitier Architecture</h1>
+    <p>Multitier architecture, also known as n-tier architecture, is a software design pattern that separates an application into multiple layers or tiers, each responsible for specific functionality. This architecture promotes modularity, scalability, and maintainability by dividing the application into distinct components that can be developed, deployed, and managed independently.</p>
+    <p>In a typical multitier architecture, there are three main tiers:</p> 
+    <ol>
+        <li><strong>Presentation Tier:</strong> This is the topmost layer that interacts with the user. It is responsible for displaying the user interface and handling user input. Technologies used in this tier include HTML, CSS, JavaScript, and various front-end frameworks.</li>
+        <li><strong>Application Tier:</strong> This middle layer contains the business logic of the application. It processes user requests, performs calculations, and makes decisions based on the application's rules. Common technologies for this tier include server-side programming languages like Java, C#, Python, and frameworks such as Spring or .NET.</li>
+        <li><strong>Data Tier:</strong> This bottom layer is responsible for data storage and management. It interacts with databases to store and retrieve data as needed by the application. Technologies used in this tier include relational databases like MySQL, PostgreSQL, and NoSQL databases like MongoDB.</li>
+    </ol>
+    <p>Multitier architecture allows for better separation of concerns, making it easier to maintain and scale applications. Each tier can be developed and updated independently, which enhances flexibility and reduces the risk of introducing bugs when making changes. Additionally, this architecture can improve performance by allowing different tiers to be optimized for their specific tasks.</p>
+    <hr style="border: none; border-top: 1px solid #e2e8f0; margin: 25px 0;">
+    <p style="color: #2c5282; font-size: 1.2em; font-weight: 600;">Benefits of Multitier Architecture:</p>
+    <ul style="background-color: #f7fafc; padding: 20px 20px 20px 40px; border-radius: 6px; border-left: 4px solid #4299e1;">
+        <li style="margin-bottom: 10px;"><strong>Scalability:</strong> Each tier can be scaled independently based on demand.</li>
+        <li style="margin-bottom: 10px;"><strong>Maintainability:</strong> Changes to one tier do not affect others, making updates easier.</li>
+        <li style="margin-bottom: 10px;"><strong>Reusability:</strong> Business logic can be reused across different presentation layers.</li>
+        <li style="margin-bottom: 10px;"><strong>Security:</strong> Each tier can have its own security measures, protecting sensitive data.</li>
+        <li><strong>Flexibility:</strong> Different technologies can be used for each tier based on requirements.</li>
+    </ul>
+    <hr style="border: none; border-top: 1px solid #e2e8f0; margin: 25px 0;">
+    <div style="text-align: center; margin: 20px 0;">
+        <img src="images.html/multitier-arch.png"
+            alt="Diagram showing three-tier architecture: Presentation Tier (HTML/CSS/JS) at top, Application Tier (Business Logic) in middle, Data Tier (Database) at bottom, with arrows showing data flow between tiers"
+            style="max-width: 100%; height: auto; border-radius: 4px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+        <p style="color: #718096; font-size: 0.9em; margin-top: 10px;">Three-Tier Architecture Model</p>
+    </div>
+    <hr style="border: none; border-top: 1px solid #e2e8f0; margin: 25px 0;">
+    <a href="glossary.html" style="color: #2b6cb0; text-decoration: none; font-weight: 500; padding: 10px 20px; background-color: #ebf8ff; border-radius: 4px; display: inline-block;">← Back to Glossary</a>
+</div>
+</html>
