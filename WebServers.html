@@ -13,8 +13,41 @@
     </nav>
     <div style="background-color: #ffffff; max-width: 800px; margin: 20px auto; padding: 30px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.08);">
     <h1 style="color: #1a365d; border-bottom: 3px solid #2c5282; padding-bottom: 15px;">Web Servers</h1>
-    <p>A web server is a computer system that stores, processes, and delivers web pages to users over the internet. It uses the client-server model, where the server waits for client requests and responds with the requested content.</p>
-    <p>Web servers use HTTP (HyperText Transfer Protocol) to communicate with web browsers. When you visit a website, your browser sends a request to the server, which then responds with the HTML, images, CSS, and other resources that make up the page.</p>
+    <p>A <strong>web server</strong> is a computer system that stores, processes, and delivers web pages to users over the internet. It uses the <em>client-server model</em>, where the server waits for client requests and responds with the requested content.</p>
+    <p>Web servers use <strong>HTTP</strong> (HyperText Transfer Protocol) to communicate with web browsers. When you visit a website, your browser sends a request to the server, which then responds with the HTML, images, CSS, and other resources that make up the page.</p>
+    <hr style="border: none; border-top: 1px solid #e2e8f0; margin: 25px 0;">
+    
+    <p style="color: #2c5282; font-size: 1.2em; font-weight: 600;">Key Server Ports:</p>
+    <ul style="background-color: #f7fafc; padding: 20px 20px 20px 40px; border-radius: 6px; border-left: 4px solid #4299e1;">
+        <li style="margin-bottom: 10px;"><strong>Port 80</strong> — HTTP (unencrypted web traffic)</li>
+        <li style="margin-bottom: 10px;"><strong>Port 443</strong> — HTTPS (SSL/TLS encrypted traffic)</li>
+        <li style="margin-bottom: 10px;"><strong>Port 21</strong> — FTP (File Transfer Protocol)</li>
+        <li><strong>Port 22</strong> — SSH/SFTP (secure file transfer)</li>
+    </ul>
+    <hr style="border: none; border-top: 1px solid #e2e8f0; margin: 25px 0;">
+    
+    <p style="color: #2c5282; font-size: 1.2em; font-weight: 600;">Common HTTP Status Codes:</p>
+    <ul style="background-color: #f7fafc; padding: 20px 20px 20px 40px; border-radius: 6px; border-left: 4px solid #4299e1;">
+        <li style="margin-bottom: 10px;"><strong>200 OK</strong> — Request successful</li>
+        <li style="margin-bottom: 10px;"><strong>301 Moved Permanently</strong> — Resource has moved permanently</li>
+        <li style="margin-bottom: 10px;"><strong>304 Not Modified</strong> — Cached version is still valid</li>
+        <li style="margin-bottom: 10px;"><strong>400 Bad Request</strong> — Server cannot process malformed request</li>
+        <li style="margin-bottom: 10px;"><strong>401 Unauthorized</strong> — Authentication required</li>
+        <li style="margin-bottom: 10px;"><strong>403 Forbidden</strong> — Access denied</li>
+        <li style="margin-bottom: 10px;"><strong>404 Not Found</strong> — Resource not found</li>
+        <li style="margin-bottom: 10px;"><strong>500 Internal Server Error</strong> — Generic server error</li>
+        <li><strong>503 Service Unavailable</strong> — Server temporarily overloaded</li>
+    </ul>
+    <hr style="border: none; border-top: 1px solid #e2e8f0; margin: 25px 0;">
+    
+    <p style="color: #2c5282; font-size: 1.2em; font-weight: 600;">How Web Servers Work:</p>
+    <ol style="background-color: #f7fafc; padding: 20px 20px 20px 40px; border-radius: 6px; border-left: 4px solid #4299e1;">
+        <li style="margin-bottom: 10px;"><strong>Receive Request:</strong> The server listens on port 80 (HTTP) or port 443 (HTTPS) for incoming requests from clients.</li>
+        <li style="margin-bottom: 10px;"><strong>Process Request:</strong> The server parses the HTTP request and determines which resource is being requested.</li>
+        <li style="margin-bottom: 10px;"><strong>Locate Resource:</strong> The server finds the requested file (HTML, image, CSS, etc.) on the filesystem or generates dynamic content.</li>
+        <li style="margin-bottom: 10px;"><strong>Build Response:</strong> The server creates an HTTP response including status code, headers, and the requested content.</li>
+        <li><strong>Send Response:</strong> The server transmits the response back to the client's browser.</li>
+    </ol>
     <hr style="border: none; border-top: 1px solid #e2e8f0; margin: 25px 0;">
 
     <div style="text-align: center; margin: 20px 0;">
@@ -36,10 +69,20 @@
     <hr style="border: none; border-top: 1px solid #e2e8f0; margin: 25px 0;">
     <p style="color: #2c5282; font-size: 1.2em; font-weight: 600;">Popular web server software:</p>
     <ul style="background-color: #f7fafc; padding: 20px 20px 20px 40px; border-radius: 6px; border-left: 4px solid #4299e1;">
-        <li><strong>Apache HTTP Server:</strong> Open-source web server widely used across the internet.</li>
-        <li><strong>Nginx:</strong> High-performance web server known for handling concurrent connections efficiently.</li>
-        <li><strong>Microsoft IIS:</strong> Internet Information Services, Microsoft's web server for Windows.</li>
-        <li><strong>LiteSpeed:</strong> High-performance web server with built-in caching and security features.</li>
+        <li style="margin-bottom: 10px;"><strong>Apache HTTP Server</strong> (1995): Open-source web server developed by the Apache Software Foundation. Currently the most widely used server software, powering ~31% of all websites (2024 data).</li>
+        <li style="margin-bottom: 10px;"><strong>Nginx</strong> (2004): Created by Igor Sysoev, known for high performance and low memory usage. Powers ~34% of top 1000 websites. Excellent for handling concurrent connections.</li>
+        <li style="margin-bottom: 10px;"><strong>Microsoft IIS</strong> (1995): Internet Information Services, integrated with Windows Server. Tight integration with .NET applications and Active Directory.</li>
+        <li><strong>LiteSpeed</strong> (2000): Commercial web server with a free OpenLiteSpeed version. Known for Apache-compatible features with better performance and built-in caching.</li>
+    </ul>
+    <hr style="border: none; border-top: 1px solid #e2e8f0; margin: 25px 0;">
+    
+    <p style="color: #2c5282; font-size: 1.2em; font-weight: 600;">Types of Web Hosting:</p>
+    <ul style="background-color: #f7fafc; padding: 20px 20px 20px 40px; border-radius: 6px; border-left: 4px solid #4299e1;">
+        <li style="margin-bottom: 10px;"><strong>Shared Hosting:</strong> Multiple websites share resources on a single server. Cost-effective but limited performance.</li>
+        <li style="margin-bottom: 10px;"><strong>Virtual Private Server (VPS):</strong> Virtualized server with dedicated resources. Better performance and customization.</li>
+        <li style="margin-bottom: 10px;"><strong>Dedicated Server:</strong> Entire physical server dedicated to one user. Maximum control and performance.</li>
+        <li style="margin-bottom: 10px;"><strong>Cloud Hosting:</strong> Resources distributed across multiple servers, offering scalability and high availability.</li>
+        <li><strong>Container Hosting:</strong> Uses containerization (Docker, Kubernetes) for lightweight, portable application deployment.</li>
     </ul>
     <hr style="border: none; border-top: 1px solid #e2e8f0; margin: 25px 0;">
     <a href="glossary.html" style="color: #2b6cb0; text-decoration: none; font-weight: 500; padding: 10px 20px; background-color: #ebf8ff; border-radius: 4px; display: inline-block;">← Back to Glossary</a>
